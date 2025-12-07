@@ -1,0 +1,30 @@
+{
+    "name": "Features",
+    "rootNamespace": "",
+    "references": [
+        "GUID:4318604bdacffaa4a8084d74f4c8d2cc",
+        "GUID:1e466c78c7791c54fa01389c9003db12",
+        "GUID:c1dbfb9460d0eb848a849305602c183e",
+        "GUID:69ca778aa767aec4f9e8322caa201824",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:ebc8ac87ceecff24b8cbb739daf64755",
+        "GUID:477600c1b706d9a4591f4b6c22912360",
+        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc",
+        "GUID:bb3ac2117478dc94db72cf8345f5b8ef",
+        "GUID:ec392cc1e7e94ff4ab76d530913b3f78",
+        "GUID:16ef8a357dd826844a8b16d5cfeb2cbc",
+        "GUID:7e5d5212f3ae3ae4aa8d926ab4207b25",
+        "GUID:f09a2bf6f3889a9419fe17938849ebd0",
+        "GUID:8420f0ddcb7167f429f9ddcf8f66004e",
+        "GUID:278a7e4e9cc683f44bec0c9e07100a1f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

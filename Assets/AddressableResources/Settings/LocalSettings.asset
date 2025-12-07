@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8af394fa3d9b4e09bb153a042c4dddf6, type: 3}
+  m_Name: LocalSettings
+  m_EditorClassIdentifier: 
+  _gameSettings:
+    <BoardSize>k__BackingField: 8
+  _ugolkiRulesSettings:
+    <Rule1>k__BackingField: can_jump_diagonally
+    <Rule2>k__BackingField: can_jump_orthogonally
+    <Rule3>k__BackingField: cannot_jump
+  _viewNames:
+    <MainMenu>k__BackingField: MainMenuWindow
+    <GameHUD>k__BackingField: GameHUDWindow
+    <MessagePopup>k__BackingField: MessagePopupWindow
+    <GameResultPopup>k__BackingField: GameResultPopupWindow
+    <UgolkiRulesListItem>k__BackingField: UgolkiRuleListItem
+    <UgolkiBoard>k__BackingField: UgolkiBoard
+  _resourceNames:
+    <WindowRoots>k__BackingField: WindowRoots
+    <PieceWhite>k__BackingField: CheckersPiece_White
+    <PieceBlack>k__BackingField: CheckersPiece_Black
+    <DefaultBoardPositions>k__BackingField: DefaultBoardPositions
+    <WhiteWinConditionsBoard>k__BackingField: WhiteWinConditionsBoard
+    <BlackWinConditionsBoard>k__BackingField: BlackWinConditionsBoard
+  _localizationKeys:
+    _gameResultPopupLocalizationKeys:
+      <GamerResultWhiteWins>k__BackingField: gamer_result_white_wins
+      <GamerResultBlackWins>k__BackingField: gamer_result_black_wins
+    _mainMenuLocalizationKeys:
+      <StartGameButton>k__BackingField: start_game_button
+      <UgolkiRule1>k__BackingField: ugolki_rule_1
+      <UgolkiRule2>k__BackingField: ugolki_rule_2
+      <UgolkiRule3>k__BackingField: ugolki_rule_3
+    _messagePopupLocalizationKeys:
+      <NotYourMoveMessage>k__BackingField: not_your_move_message
+      <SelectPieceMessage>k__BackingField: select_piece_message
+      <MoveUnreachableMessage>k__BackingField: move_unreachable_message
+    _ugolkiGameLocalizationKeys:
+      <WhiteMovesCount>k__BackingField: white_moves_count
+      <BlackMovesCount>k__BackingField: black_moves_count
+      <MovesCountValue>k__BackingField: '[moves]'
+      <CurrentPlayer>k__BackingField: current_player
+      <CurrentPlayerValue>k__BackingField: '[player]'
+      <WhitePlayer>k__BackingField: white_player
+      <BlackPlayer>k__BackingField: black_player

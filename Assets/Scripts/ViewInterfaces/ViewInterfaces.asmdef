@@ -1,0 +1,19 @@
+{
+    "name": "ViewInterfaces",
+    "rootNamespace": "",
+    "references": [
+        "GUID:7e5d5212f3ae3ae4aa8d926ab4207b25",
+        "GUID:1e466c78c7791c54fa01389c9003db12",
+        "GUID:ebc8ac87ceecff24b8cbb739daf64755",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

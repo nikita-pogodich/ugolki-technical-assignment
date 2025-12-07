@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: World
+  m_EditorClassIdentifier: 
+  m_GroupName: World
+  m_GUID: 74eae6ba68c3c5948b4fe52f556ddc4e
+  m_SerializeEntries:
+  - m_GUID: 21267cabb0b257147b4e2f3b449b3066
+    m_Address: CheckersPiece_Black
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 74b24cd7ab45df34491e3c3d31ef741c
+    m_Address: UgolkiBoard
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e7173716c0b464459e350a36e6d36d8
+    m_Address: BlackWinConditionsBoard
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a140595d0d6b4884ea298ce54136b402
+    m_Address: CheckersPiece_White
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c3177cb9e685efa42b09c857d0fddfc8
+    m_Address: WhiteWinConditionsBoard
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d1b912577fdf5e6418b6195e9669eeec
+    m_Address: DefaultBoardPositions
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 0c074b2f4e1b087478a971ae5ac31aac, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 04c22bbe1630b574f94f579258877535, type: 2}
+    - {fileID: 11400000, guid: 0fe4839147b851140a02945811ceea9f, type: 2}

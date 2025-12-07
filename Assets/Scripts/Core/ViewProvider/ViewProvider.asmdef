@@ -1,0 +1,24 @@
+{
+    "name": "ViewProvider",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc",
+        "GUID:69ca778aa767aec4f9e8322caa201824",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:856c6cb9e6004bc4db7d8cf47d6abf2e",
+        "GUID:730bb77019394914b80fddca390e7faf",
+        "GUID:35a2ff3ac7791c14b8b84f0be3487952",
+        "GUID:7e5d5212f3ae3ae4aa8d926ab4207b25",
+        "GUID:8420f0ddcb7167f429f9ddcf8f66004e",
+        "GUID:ebc8ac87ceecff24b8cbb739daf64755"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
