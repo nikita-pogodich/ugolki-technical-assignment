@@ -1,5 +1,5 @@
 using System.Threading;
-using Core.ServiceInitializer;
+using Core.Services;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 

@@ -31,9 +31,7 @@ namespace Core.ViewProvider
 
         public async UniTask InitializeAsync(CancellationToken cancellation)
         {
-            await UniTask.WhenAll(
-                UniTask.WaitUntil(() => _resourcesManager.IsInitialized, cancellationToken: cancellation),
-                UniTask.WaitUntil(() => _objectResolver != null, cancellationToken: cancellation));
+            await UniTask.WaitUntil(() => _objectResolver != null, cancellationToken: cancellation);
 
             IsInitialized = true;
         }

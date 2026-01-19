@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 using Core.ModelProvider;
-using Core.ServiceInitializer;
+using Core.ServiceInitialization;
 using Core.WindowManager;
 using Core.WorldObjectManager;
 using Cysharp.Threading.Tasks;

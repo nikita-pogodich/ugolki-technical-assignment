@@ -1,5 +1,5 @@
 using Core.MVP;
-using Core.ServiceInitializer;
+using Core.Services;
 using Cysharp.Threading.Tasks;
 
 namespace Core.WindowManager

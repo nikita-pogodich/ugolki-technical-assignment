@@ -1,7 +1,7 @@
 using Core.LocalizationManager;
 using Core.Logger;
 using Core.ResourcesManager;
-using Core.ServiceInitializer;
+using Core.ServiceInitialization;
 using Core.SettingsHelper;
 using Core.ViewProvider;
 using Settings;
@@ -28,7 +28,7 @@ namespace Core.DI
             ILogger debugLogger = GetDebugLogger();
             var dualLogger = new DualLogger(_unityLogger, debugLogger);
 
-            builder.Register<IServiceInitializer, ServiceInitializer.ServiceInitializer>(Lifetime.Singleton);
+            builder.Register<IServiceInitializer, ServiceInitializer>(Lifetime.Singleton);
 
             builder.RegisterInstance<ILoadingScreenView, LoadingScreenView>(_loadingScreenView);
             builder.RegisterInstance<IDualLogger>(dualLogger);

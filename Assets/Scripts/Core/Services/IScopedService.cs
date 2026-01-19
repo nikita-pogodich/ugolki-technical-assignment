@@ -1,6 +1,6 @@
 ﻿using VContainer;
 
-namespace Core.ServiceInitializer
+namespace Core.Services
 {
     public interface IScopedService
     {

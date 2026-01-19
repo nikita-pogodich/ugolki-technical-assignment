@@ -38,8 +38,6 @@ namespace Core.WindowViewProvider
 
         public async UniTask InitializeAsync(CancellationToken cancellation)
         {
-            await UniTask.WaitUntil(() => _resourcesManager.IsInitialized, cancellationToken: cancellation);
-
             GameObject windowRootsGameObject = await _resourcesManager.InstantiateAsync(
                 _localSettings.ResourceNames.WindowRoots,
                 cancellationToken: cancellation);

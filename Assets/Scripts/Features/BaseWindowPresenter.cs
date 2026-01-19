@@ -1,5 +1,4 @@
 ﻿using Core.MVP;
-using Core.WindowManager;
 
 namespace Features
 {

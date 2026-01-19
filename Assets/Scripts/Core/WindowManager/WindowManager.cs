@@ -34,7 +34,6 @@ namespace Core.WindowManager
         {
             await UniTask.WaitUntil(() => _objectResolver != null, cancellationToken: cancellation);
             RegisterWindowFactories();
-            await UniTask.CompletedTask;
             IsInitialized = true;
         }
 

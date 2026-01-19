@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using Cysharp.Threading.Tasks;
 
-namespace Core.ServiceInitializer
+namespace Core.Services
 {
     public interface IInitializableService
     {
