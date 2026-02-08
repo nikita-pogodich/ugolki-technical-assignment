@@ -45,13 +45,7 @@ namespace Core.DI
 
         public async UniTask StartAsync(CancellationToken cancellation)
         {
-            try
-            {
-                await InitializeAsync(cancellation);
-            }
-            catch (OperationCanceledException)
-            {
-            }
+            await InitializeAsync(cancellation).SuppressCancellationThrow();
         }
 
         private async UniTask InitializeAsync(CancellationToken cancellation)
