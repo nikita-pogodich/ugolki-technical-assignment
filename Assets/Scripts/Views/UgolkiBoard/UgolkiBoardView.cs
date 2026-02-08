@@ -76,13 +76,7 @@ namespace Views.UgolkiBoard
             ClearBoard();
             SetCellHighlightShown(false);
 
-            try
-            {
-                await CreatePieces(board);
-            }
-            catch (OperationCanceledException)
-            {
-            }
+            await CreatePieces(board).SuppressCancellationThrow();
 
             _isGameStarted = true;
         }

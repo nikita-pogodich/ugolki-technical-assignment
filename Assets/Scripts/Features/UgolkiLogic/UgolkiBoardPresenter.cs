@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Core.WindowManager;
 using Cysharp.Threading.Tasks;
@@ -56,7 +57,12 @@ namespace Features.UgolkiLogic
             SetShown(false);
         }
 
-        private async void OnGameStarted(Unit _)
+        private void OnGameStarted(Unit _)
+        {
+            StartGameAsync().Forget();
+        }
+
+        private async UniTaskVoid StartGameAsync()
         {
             await View.StartGame(Model.Board);
             _loadingScreenView.FadeOut();

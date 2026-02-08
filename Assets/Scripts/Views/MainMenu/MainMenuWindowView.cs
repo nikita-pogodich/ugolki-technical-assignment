@@ -30,24 +30,18 @@ namespace Views.MainMenu
             SetCanvasEnabled(isShown);
         }
 
-        private void Start()
+        protected override void OnInit(ref DisposableBuilder disposableBuilder)
         {
-            _startGameButton.onClick.AddListener(OnStartGame);
-            _exitButton.onClick.AddListener(OnExitGame);
+            _startGameButton.OnClickAsObservable().Subscribe(OnStartGame).AddTo(ref disposableBuilder);
+            _exitButton.OnClickAsObservable().Subscribe(OnExitGame).AddTo(ref disposableBuilder);
         }
 
-        private void OnDestroy()
-        {
-            _startGameButton.onClick.RemoveListener(OnStartGame);
-            _exitButton.onClick.RemoveListener(OnExitGame);
-        }
-
-        private void OnStartGame()
+        private void OnStartGame(Unit _)
         {
             _startGame.Execute(Unit.Default);
         }
 
-        private void OnExitGame()
+        private void OnExitGame(Unit _)
         {
             _exitGame.Execute(Unit.Default);
         }

@@ -19,6 +19,9 @@ namespace Features.MainMenu.UgolkiRulesList
         private readonly ReactiveProperty<IUgolkiRulesListItemModel> _selectedRule = new();
         private readonly CompositeDisposable _reactiveCompositeDisposable = new();
 
+        public IReadOnlyDictionary<string, IUgolkiRulesListItemModel> RuleModelsByKey => _ruleModelsByKey;
+        public ReadOnlyReactiveProperty<IUgolkiRulesListItemModel> SelectedRule => _selectedRule;
+
         [Inject]
         public UgolkiRulesListModel(
             IModelProvider modelProvider,
@@ -29,9 +32,6 @@ namespace Features.MainMenu.UgolkiRulesList
             _ugolkiModel = ugolkiModel;
             _modelProvider = modelProvider;
         }
-
-        public IReadOnlyDictionary<string, IUgolkiRulesListItemModel> RuleModelsByKey => _ruleModelsByKey;
-        public ReadOnlyReactiveProperty<IUgolkiRulesListItemModel> SelectedRule => _selectedRule;
 
         protected override async UniTask OnInit()
         {

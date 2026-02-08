@@ -36,21 +36,12 @@ namespace Views.MainMenu
         {
             _titleLocalizationKey.Subscribe(UpdateTitle).AddTo(ref disposableBuilder);
             _localizationManager.CurrentLanguage.Subscribe(OnLocalizationChanged).AddTo(ref disposableBuilder);
+            _selectButton.OnClickAsObservable().Subscribe(OnSelected).AddTo(ref disposableBuilder);
         }
 
         public void SetSelected(bool isSelected)
         {
             _selectedBackground.alpha = isSelected ? 1.0f : 0.0f;
-        }
-
-        private void Start()
-        {
-            _selectButton.onClick.AddListener(OnSelected);
-        }
-
-        private void OnDestroy()
-        {
-            _selectButton.onClick.RemoveListener(OnSelected);
         }
 
         private void OnLocalizationChanged(LanguageInfo _) => UpdateTitle(_titleLocalizationKey.Value);
@@ -66,7 +57,7 @@ namespace Views.MainMenu
             _title.text = title;
         }
 
-        private void OnSelected()
+        private void OnSelected(Unit _)
         {
             _selected.Execute(Unit.Default);
         }
