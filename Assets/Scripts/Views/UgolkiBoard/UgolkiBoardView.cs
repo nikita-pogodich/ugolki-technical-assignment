@@ -9,6 +9,7 @@ using R3;
 using Settings;
 using Tools;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using VContainer;
 using ViewInterfaces;
 
@@ -139,7 +140,7 @@ namespace Views.UgolkiBoard
 
             Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
 
-            if (Input.GetMouseButtonDown(0) == true)
+            if (Mouse.current.leftButton.wasPressedThisFrame)
             {
                 if (Physics.Raycast(ray, out RaycastHit hit))
                 {

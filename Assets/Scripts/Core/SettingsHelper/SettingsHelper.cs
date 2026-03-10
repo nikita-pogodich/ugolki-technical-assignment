@@ -56,7 +56,7 @@ namespace Core.SettingsHelper
         public async UniTask<List<Coord>> GetWhiteWinConditionsAsync()
         {
             var whiteWinConditionsBoardTextAsset =
-                _resourcesManager.LoadAsset<TextAsset>(_localSettings.ResourceNames.WhiteWinConditionsBoard);
+                await _resourcesManager.LoadAssetAsync<TextAsset>(_localSettings.ResourceNames.WhiteWinConditionsBoard);
 
             List<Coord> whiteWinConditions = await GetWinConditions(
                 whiteWinConditionsBoardTextAsset,

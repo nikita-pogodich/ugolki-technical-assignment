@@ -46,6 +46,11 @@ namespace Features
                 childPresenter.Deinit();
             }
 
+            if (View != null)
+            {
+                View.Deinit();
+            }
+
             _childPresenters.Clear();
         }
 

@@ -22,7 +22,7 @@ namespace Views
         public void Deinit()
         {
             OnDeinit();
-            _reactiveDisposable.Dispose();
+            _reactiveDisposable?.Dispose();
         }
 
         public virtual void SetShown(bool isShown)
